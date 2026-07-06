@@ -1,0 +1,38 @@
+.destacados{
+    width: 90%;
+    margin: 70px auto 50px;
+    text-align: center;
+}
+
+.destacados h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.contenedor-destacadas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.producto{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.producto:hover{
+    transform: translateY(-10px);
+}
+
+.producto img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.producto p{
+    color: #555;
+    line-height: 1.5;
+}

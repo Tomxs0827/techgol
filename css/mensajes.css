@@ -1,0 +1,144 @@
+body {
+    background: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.mensajes-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 120px 20px 60px 20px;
+}
+
+/* ===== CARD ===== */
+.mensajes-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.mensajes-header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mensajes-header h4 {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.badge-count {
+    background: #e94560;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.83rem;
+    font-weight: bold;
+}
+
+.mensajes-body {
+    padding: 25px;
+}
+
+/* ===== TABLA ===== */
+.mensajes-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mensajes-table thead tr {
+    background: #f0f2f5;
+}
+
+.mensajes-table th {
+    padding: 12px 15px;
+    font-size: 0.83rem;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+}
+
+.mensajes-table td {
+    padding: 14px 15px;
+    font-size: 0.88rem;
+    color: #444;
+    border-bottom: 1px solid #f0f2f5;
+    vertical-align: top;
+}
+
+.mensajes-table tr:hover {
+    background: #fafafa;
+}
+
+/* ===== NO LEIDO ===== */
+.no-leido {
+    background: #fffbea !important;
+    border-left: 3px solid #e94560;
+}
+
+.no-leido td {
+    font-weight: 600;
+}
+
+/* ===== BADGES ===== */
+.badge-leido {
+    background: #eafaf1;
+    color: #27ae60;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: bold;
+}
+
+.badge-noleido {
+    background: #ffeaea;
+    color: #e94560;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: bold;
+}
+
+/* ===== MENSAJE TEXTO ===== */
+.mensaje-texto {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ===== FECHA ===== */
+.fecha-texto {
+    color: #999;
+    font-size: 0.82rem;
+    white-space: nowrap;
+}
+
+/* ===== VACIO ===== */
+.mensajes-vacio {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.mensajes-vacio .vacio-icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.mensajes-vacio p {
+    font-size: 1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px){
+    .mensajes-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

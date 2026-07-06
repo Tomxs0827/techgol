@@ -1,0 +1,173 @@
+body {
+    background: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== SECCION ===== */
+.marcas {
+    padding: 120px 5% 60px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ===== TITULO ===== */
+.marcas-titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.marcas-titulo h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.marcas-titulo p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* ===== GRID ===== */
+.contenedor-marcas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* ===== CARD ===== */
+.marca-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #1a1a2e;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 4px solid transparent;
+}
+
+.marca-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(233,69,96,0.15);
+    border-top: 4px solid #e94560;
+    color: #1a1a2e;
+}
+
+/* ===== IMAGEN ===== */
+.marca-img-container {
+    width: 100%;
+    height: 180px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    transition: background 0.3s ease;
+}
+
+.marca-card:hover .marca-img-container {
+    background: #f0f2f5;
+}
+
+.marca-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: grayscale(20%);
+}
+
+.marca-card:hover .marca-img-container img {
+    transform: scale(1.08);
+    filter: grayscale(0%);
+}
+
+.marca-sin-imagen {
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+/* ===== CONTENIDO ===== */
+.marca-info {
+    padding: 20px 20px 0 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marca-card h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.marca-card p {
+    font-size: 0.88rem;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ===== BOTON ===== */
+.marca-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #e94560, #c0392b);
+    color: white;
+    padding: 9px 22px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.marca-btn:hover {
+    box-shadow: 0 4px 15px rgba(233,69,96,0.4);
+    transform: scale(1.05);
+    color: white;
+}
+
+/* ===== VACIA ===== */
+.marcas-vacia {
+    text-align: center;
+    padding: 60px;
+    color: #999;
+    font-size: 1rem;
+    grid-column: 1/-1;
+}
+
+.marcas-vacia .vacia-icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px){
+    .contenedor-marcas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .marcas-titulo h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 480px){
+    .contenedor-marcas {
+        grid-template-columns: 1fr;
+    }
+}

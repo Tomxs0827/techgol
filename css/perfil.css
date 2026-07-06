@@ -1,0 +1,123 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.perfil-card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+}
+
+.perfil-header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.perfil-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e94560;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 15px auto;
+    color: white;
+}
+
+.perfil-nombre {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.perfil-tipo {
+    font-size: 13px;
+    background-color: #e94560;
+    padding: 3px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.perfil-body {
+    padding: 30px;
+    background-color: white;
+}
+
+.perfil-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.perfil-item:last-child {
+    border-bottom: none;
+}
+
+.perfil-item-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.perfil-item-info {
+    flex: 1;
+}
+
+.perfil-item-label {
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+}
+
+.perfil-item-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.btn-gestionar {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.btn-gestionar:hover {
+    opacity: 0.85;
+    color: white;
+}
+
+.btn-logout {
+    background: linear-gradient(135deg, #e94560, #c0392b);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.btn-logout:hover {
+    opacity: 0.85;
+    color: white;
+}
