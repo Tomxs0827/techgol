@@ -1,2 +1,2 @@
 # techgol
-pagina deportiva que impulsara la economia local, genera empleo y promueve el deporte en la comunidad
+pagina deportiva que impulsará la economia local, generará empleo y promueve el deporte en la comunidad
